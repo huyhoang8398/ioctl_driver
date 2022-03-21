@@ -1,0 +1,6 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/kn/dev/internship/ioctl_driver'
+make: Leaving directory '/home/kn/dev/internship/ioctl_driver'
+ 
+make: *** No targets specified and no makefile found.  Stop.
+ 
