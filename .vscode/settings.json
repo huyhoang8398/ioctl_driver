@@ -10,6 +10,8 @@
         "*.tcc": "c",
         "cstdbool": "c",
         "cstdint": "c",
-        "typeinfo": "c"
+        "typeinfo": "c",
+        "mm.h": "c",
+        "mm_types.h": "c"
     }
 }

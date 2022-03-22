@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
- 
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Mar 21 14:47:59 2022
+# Make data base, printed on Tue Mar 22 19:02:21 2022
 
 # Variables
 
@@ -51,7 +49,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 8:52547
+JOURNAL_STREAM = 8:51691
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-unity:/etc/xdg
 # makefile
@@ -77,7 +75,7 @@ UNITY_DEFAULT_PROFILE = unity
 # environment
 CLUTTER_IM_MODULE = ibus
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-afada15a-64ae-412a-bfa5-b84975da7703.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-5231b732-5e85-4161-a865-b2ec993e78dc.sock
 # environment
 LC_NAME = en_US.UTF-8
 # environment
@@ -95,7 +93,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/kn-ThinkPad-X1-Carbon-7th:@/tmp/.ICE-unix/2460,unix/kn-ThinkPad-X1-Carbon-7th:/tmp/.ICE-unix/2460
+SESSION_MANAGER = local/kn-ThinkPad-X1-Carbon-7th:@/tmp/.ICE-unix/2457,unix/kn-ThinkPad-X1-Carbon-7th:/tmp/.ICE-unix/2457
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -107,7 +105,7 @@ VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-INVOCATION_ID = 8be8748bdd1c4c628ba3445fe8bb89dd
+INVOCATION_ID = fa6f2f11cc374271890227300a1ec10a
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -119,7 +117,7 @@ XDG_SESSION_DESKTOP = unity
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 25333
+GIO_LAUNCHED_DESKTOP_FILE_PID = 64861
 # automatic
 %F = $(notdir $%)
 # environment
@@ -183,7 +181,7 @@ LC_MONETARY = en_US.UTF-8
 # environment
 XDG_CURRENT_DESKTOP = Unity
 # environment
-MANAGERPID = 2061
+MANAGERPID = 2051
 # environment
 LESS = -R
 # automatic
@@ -259,7 +257,7 @@ LC_ADDRESS = en_US.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 25333
+VSCODE_PID = 64861
 # variable set hash-table stats:
 # Load=124/1024=12%, Rehash=0, Collisions=16/146=11%
 
@@ -269,9 +267,9 @@ VSCODE_PID = 25333
 
 # Directories
 
-# . (device 66306, inode 21365915): 8 files, no impossibilities.
+# . (device 66306, inode 21365915): 9 files, no impossibilities.
 
-# 8 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -281,7 +279,6 @@ VSCODE_PID = 25333
 
 # Not a target:
 all:
- 
 #  Command line target.
 #  Implicit rule search has been done.
 #  File does not exist.
@@ -298,6 +295,9 @@ Makefile:
 makefile:
 #  Implicit rule search has been done.
 #  File does not exist.
+ 
+make: *** No rule to make target 'all'.  Stop.
+ 
 #  File has been updated.
 #  Failed to be updated.
 
@@ -322,12 +322,12 @@ GNUmakefile:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 16 / storage = 142 B / avg = 8 B
-# current buf: size = 8162 B / used = 142 B / count = 16 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 17 / storage = 147 B / avg = 8 B
+# current buf: size = 8162 B / used = 147 B / count = 17 / avg = 8 B
 
-# strcache performance: lookups = 19 / hit rate = 15%
+# strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
-# Load=16/8192=0%, Rehash=0, Collisions=1/19=5%
-# Finished Make data base on Mon Mar 21 14:47:59 2022
+# Load=17/8192=0%, Rehash=0, Collisions=1/20=5%
+# Finished Make data base on Tue Mar 22 19:02:21 2022
 
  

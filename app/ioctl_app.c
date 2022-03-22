@@ -56,11 +56,13 @@ int main(void) {
 
   int fd_ioctl = open_driver(IOCTL_DRIVER_NAME);
   // uint32_t value;
-  struct mesg msg;
-  msg.addr = 94668954824704;
-  msg.len = 4;
+  // struct mesg msg;
+  // msg.addr = 94668954824704;
+  // msg.len = 4;
 
-	if (ioctl(fd_ioctl, IOCTL_BASE_GET_MUIR, &msg) < 0) {
+  unsigned long addr = 94668954824704;
+
+	if (ioctl(fd_ioctl, IOCTL_BASE_GET_MUIR, &addr) < 0) {
 			perror("Error ioctl PL_AXI_DMA_GET_NUM_DEVICES");
 			exit(EXIT_FAILURE);
 	}
