@@ -7,13 +7,29 @@
                 "/usr/include",
                 "/usr/local/include",
                 "/usr/lib/gcc/x86_64-linux-gnu/9/include",
-                "/usr/src/linux-headers-5.13.0-35-generic/include",
-                "/usr/src/linux-hwe-5.13-headers-5.13.0-35/include"
+                "/usr/src/linux-hwe-5.13-headers-5.13.0-39/include",
+                "/usr/src/linux-headers-5.13.0-39-generic/include",
+                "/usr/src/linux-headers-5.13.0-39-generic/include/uapi",
+                "/usr/src/linux-headers-5.13.0-39-generic/include/generated",
+                "/usr/src/linux-headers-5.13.0-39-generic/arch/x86/include",
+                "/usr/src/linux-headers-5.13.0-39-generic/arch/x86/include/uapi",
+                "/usr/src/linux-headers-5.13.0-39-generic/arch/x86/include/generated"
             ],
             "defines": [
                 "__GNUC__",
                 "__KERNEL__"
             ],
+            "browse": {
+                "path": [
+                    "${workspaceFolder}",
+                    "/usr/src/linux-headers-5.13.0-39-generic//include",
+                    "/usr/src/linux-headers-5.13.0-39-generic//mm",
+                    "/usr/src/linux-headers-5.13.0-39-generic//fs",
+                    "/usr/src/linux-headers-5.13.0-39-generic//kernel"
+                ],
+                "limitSymbolsToIncludedHeaders": true,
+                "databaseFilename": ""
+            },
             "compilerPath": "/usr/bin/gcc",
             "cStandard": "gnu17",
             "cppStandard": "gnu++14",
