@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Mar 22 19:02:21 2022
+# Make data base, printed on Thu Apr  7 14:05:15 2022
 
 # Variables
 
@@ -15,9 +17,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # automatic
 ?F = $(notdir $?)
 # environment
-PAPERSIZE = letter
-# environment
-DESKTOP_SESSION = unity
+DESKTOP_SESSION = i3
 # default
 .SHELLFLAGS := -c
 # environment
@@ -26,16 +26,16 @@ XDG_SESSION_CLASS = user
 XDG_SESSION_TYPE = x11
 # environment
 VSCODE_LOG_NATIVE = false
+# environment
+BACKGROUND = #f9f5d7
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
-# environment
-LIBVIRT_DEFAULT_URI = qemu:///system
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
 XAUTHORITY = /home/kn/.Xauthority
 # environment
-GDMSESSION = unity
+GDMSESSION = i3
 # environment
 XMODIFIERS = @im=ibus
 # makefile
@@ -47,101 +47,91 @@ GDM_LANG = en_US
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-_ = /usr/share/code/code
+_ = /usr/bin/code
 # environment
-JOURNAL_STREAM = 8:51691
+XDG_CONFIG_DIRS = /etc/xdg/xdg-i3:/etc/xdg
 # environment
-XDG_CONFIG_DIRS = /etc/xdg/xdg-unity:/etc/xdg
+KITTY_WINDOW_ID = 1
 # makefile
 MAKEFILE_LIST := 
 # automatic
 @F = $(notdir $@)
-# environment
-GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
 # 'override' directive
 GNUMAKEFLAGS := 
 # environment
 MAKELEVEL := 0
 # environment
-MANDATORY_PATH = /usr/share/gconf/unity.mandatory.path
+MANDATORY_PATH = /usr/share/gconf/i3.mandatory.path
 # environment
-XDG_DATA_DIRS = /usr/share/unity:/home/kn/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+XDG_DATA_DIRS = /usr/share/i3:/usr/local/share:/usr/share:/var/lib/snapd/desktop
 # environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-UNITY_DEFAULT_PROFILE = unity
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-087e330a-b995-4391-92f1-d98d18ff0769.sock
 # environment
-CLUTTER_IM_MODULE = ibus
+LC_NAME = fr_FR.UTF-8
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-5231b732-5e85-4161-a865-b2ec993e78dc.sock
-# environment
-LC_NAME = en_US.UTF-8
-# environment
-VSCODE_CWD = /home/kn
+VSCODE_CWD = /home/kn/dev/internship/ioctl_driver
 # environment
 XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/kn/script:/home/kn/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-# environment
-UNITY_HAS_3D_SUPPORT = true
+PATH = /home/kn/script:/home/kn/bin:/usr/local/bin:/home/kn/script:/home/kn/bin:/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/kn-ThinkPad-X1-Carbon-7th:@/tmp/.ICE-unix/2457,unix/kn-ThinkPad-X1-Carbon-7th:/tmp/.ICE-unix/2457
-# environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
-SSH_AGENT_LAUNCHER = gnome-keyring
-# environment
-XDG_MENU_PREFIX = gnome-
+WINDOWID = 88080399
 # environment
 VSCODE_LOG_STACK = false
 # environment
 ELECTRON_RUN_AS_NODE = 1
-# environment
-INVOCATION_ID = fa6f2f11cc374271890227300a1ec10a
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
 XDG_GREETER_DATA_DIR = /var/lib/lightdm-data/kn
 # environment
-LS_COLORS = 
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 # environment
-XDG_SESSION_DESKTOP = unity
+XDG_SESSION_DESKTOP = i3
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
-# environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 64861
 # automatic
 %F = $(notdir $%)
 # environment
 DISPLAY = :0
 # environment
+TMUX_PANE = %3
+# environment
 GTK_IM_MODULE = ibus
 # environment
-GNOME_SESSION_XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session0
+VSCODE_PIPE_LOGGING = true
 # environment
 PWD = /home/kn/dev/internship/ioctl_driver
 # default
 .LOADED := 
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = Unity:Unity7:ubuntu
+XDG_SEAT = seat0
 # environment
-GTK_MODULES = gail:atk-bridge:unity-gtk-module
+SSH_AGENT_PID = 1436
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = i3
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /home/kn
-# automatic
-+D = $(patsubst %/,%,$(dir $+))
 # environment
-VSCODE_CODE_CACHE_PATH = /home/kn/.config/Code/CachedData/c722ca6c7eed3d7987c0d5c3df5c45f6b15e77d1
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/kn/.config/Code/CachedData/e18005f0f1b33c29e81d732535d8c0e47cafb0b5
 # environment
 LOGNAME = kn
 # environment
@@ -152,12 +142,16 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 ZSH = /home/kn/.oh-my-zsh
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
-# environment
-GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# default
+MAKE_VERSION := 4.2.1
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-LC_TIME = en_US.UTF-8
+XDG_VTNR = 7
+# environment
+LC_TIME = fr_FR.UTF-8
+# environment
+COLORTERM = truecolor
 # default
 MAKE = $(MAKE_COMMAND)
 # default
@@ -165,33 +159,31 @@ MAKECMDGOALS := all
 # environment
 QT_IM_MODULE = ibus
 # environment
-SHLVL = 1
+SHLVL = 2
 # environment
-IM_CONFIG_PHASE = 1
-# environment
-COMPIZ_CONFIG_PROFILE = ubuntu
-# default
-MAKE_VERSION := 4.2.1
+XDG_SESSION_ID = c2
 # environment
 USER = kn
 # environment
-LC_MONETARY = en_US.UTF-8
+LC_MONETARY = fr_FR.UTF-8
 # makefile
 .DEFAULT_GOAL := 
 # environment
-XDG_CURRENT_DESKTOP = Unity
+XDG_CURRENT_DESKTOP = i3
 # environment
-MANAGERPID = 2051
+LIBVIRT_DEFAULT_URI = qemu:///system
 # environment
 LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
-LC_TELEPHONE = en_US.UTF-8
+LC_TELEPHONE = fr_FR.UTF-8
+# environment
+I3SOCK = /run/user/1000/i3/ipc-socket.1303
 # default
 MAKE_COMMAND := make
 # environment
-OLDPWD = /home/kn
+OLDPWD = /home/kn/dev/internship/ioctl_driver
 # default
 .VARIABLES := 
 # automatic
@@ -201,45 +193,39 @@ LANGUAGE = en_US
 # environment
 XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-b9dadd8e-1.65.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-b9dadd8e-1.66.0-main.sock
 # makefile
 MAKEFLAGS = pqrR
 # environment
 MFLAGS = -pqrR
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
 # environment
-GTK_CSD = 0
+TMUX = /tmp//tmux-1000/default,2808,1
 # environment
 GDK_BACKEND = x11
 # environment
-LC_PAPER = en_US.UTF-8
-# environment
-GTK2_MODULES = overlay-scrollbar
+LC_PAPER = fr_FR.UTF-8
 # environment
 QT_ACCESSIBILITY = 1
 # environment
-COMPIZ_BIN_PATH = /usr/bin/
-# environment
-DEFAULTS_PATH = /usr/share/gconf/unity.default.path
-# environment
-VSCODE_PIPE_LOGGING = true
+DEFAULTS_PATH = /usr/share/gconf/i3.default.path
 # default
 MAKEFILES := 
 # environment
-LC_NUMERIC = en_US.UTF-8
+LC_NUMERIC = fr_FR.UTF-8
 # automatic
 <F = $(notdir $<)
 # environment
-LC_MEASUREMENT = en_US.UTF-8
+LC_MEASUREMENT = fr_FR.UTF-8
 # environment
 EDITOR = nvim
 # environment
 PAGER = less
 # environment
 LC_ALL = C
-# environment
-QT4_IM_MODULE = ibus
 # automatic
 ^F = $(notdir $^)
 # default
@@ -249,17 +235,19 @@ CHROME_DESKTOP = code-url-handler.desktop
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
-LC_IDENTIFICATION = en_US.UTF-8
+LC_IDENTIFICATION = fr_FR.UTF-8
 # default
 .RECIPEPREFIX := 
 # environment
-LC_ADDRESS = en_US.UTF-8
+LC_ADDRESS = fr_FR.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 64861
+TERM = tmux-256color
+# environment
+VSCODE_PID = 10575
 # variable set hash-table stats:
-# Load=124/1024=12%, Rehash=0, Collisions=16/146=11%
+# Load=117/1024=11%, Rehash=0, Collisions=16/139=12%
 
 # Pattern-specific Variable Values
 
@@ -267,7 +255,7 @@ VSCODE_PID = 64861
 
 # Directories
 
-# . (device 66306, inode 21365915): 9 files, no impossibilities.
+# . (device 66306, inode 22413891): 9 files, no impossibilities.
 
 # 9 files, no impossibilities in 1 directories.
 
@@ -295,9 +283,6 @@ Makefile:
 makefile:
 #  Implicit rule search has been done.
 #  File does not exist.
- 
-make: *** No rule to make target 'all'.  Stop.
- 
 #  File has been updated.
 #  Failed to be updated.
 
@@ -327,7 +312,8 @@ GNUmakefile:
 
 # strcache performance: lookups = 20 / hit rate = 15%
 # hash-table stats:
+ 
 # Load=17/8192=0%, Rehash=0, Collisions=1/20=5%
-# Finished Make data base on Tue Mar 22 19:02:21 2022
+# Finished Make data base on Thu Apr  7 14:05:15 2022
 
  
